@@ -13,11 +13,13 @@ body {
 .header {
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     background-color: #939AA1;
 }
 
-.nav ul li {
+nav ul li {
     display: flex;
     display: inline-flex;
     position: relative;
@@ -25,17 +27,31 @@ body {
     margin-right: 10px;
     right: 20px;
     top: 10px;
-    text-decoration: underline aquamarine 3px;
+    text-decoration: underline #84D1F1 3px;
 }
 
-.nav a {
-    color: aquamarine;
+nav a {
+    color: #84D1F1;
     margin-bottom: 2px;
 
 }
 
-.h1 {
+h1 {
     display: inline-block;
-    background-color: aquamarine;
+    background-color: #84D1F1;
     padding-left: 50px;
+}
+
+.hero {
+    display: flex;
+    display: wrap;
+    height: 300px;
+}
+
+.subtitle {
+    display: flex;
+    display: inline-flex;
+    position: absolute;
+    top: 250px;
+    left: 600px;
 }
