@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace
+}
+
+
+.header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: #939AA1;
+}
+
+.nav ul li {
+    color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline aquamarine;
+
+}
+
+.h1 {
+    display: inline-block;
+    background-color: aquamarine;
+    padding-left: 50px;
+}
