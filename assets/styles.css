@@ -36,25 +36,41 @@ nav a {
 
 }
 
-h1 {
-    display: inline-block;
-    background-color: #84D1F1;
-    padding-left: 50px;
-}
 
 .hero {
     display: flex;
-    justify-content: right;
-    top: 800px;
-    max-width: auto;
-    max-height: auto;
+    /* Might want to play with height value for desired layout */
+    height: 400px;
+    background-image: url("pattern1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .subtitle {
-    position: absolute;
     display: flex;
-    justify-content: flex-end;
-    padding-left: 0px;
-    margin-right: 50px;
-    margin-top: 450px;
+    margin-right: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #939AA1;
+    max-width: 50%;
+}
+
+#card h1 {
+    color: blue;
+}
+
+
+@media screen and (max-width:500px) {
+    .hero {
+        max-height: 300px;
+    }
 }
