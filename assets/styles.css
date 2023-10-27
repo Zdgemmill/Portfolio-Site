@@ -69,6 +69,18 @@ nav a {
     justify-content: space-between;
 }
 
+.card img {
+    flex: 0;
+    flex-direction: column-reverse;
+    max-width: 50%;
+    border: solid #84D1F1;
+
+}
+
+#first-image {
+    max-width: 100%;
+}
+
 .float-left-child {
     display: flex;
     flex-wrap: wrap;
@@ -77,11 +89,13 @@ nav a {
     margin-right: 30px;
     padding-bottom: 100PX;
 
+
 }
 
 .float-right-child {
-    display: flex;
-    align-content: flex-end;
+    flex: 1;
+    flex-direction: column;
+    align-content: center;
     flex-wrap: wrap;
     background-color: white;
     padding-bottom: 100PX;
@@ -93,4 +107,28 @@ nav a {
     .hero {
         max-height: 300px;
     }
-}
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .float-left-child {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        border-bottom: solid black;
+        border-right: none;
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-bottom: 100PX;
+    }
+
+    .float-right-child {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white;
+        padding-bottom: 0px;
+    }
