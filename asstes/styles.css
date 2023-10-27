@@ -44,14 +44,17 @@ h1 {
 
 .hero {
     display: flex;
-    display: wrap;
-    height: 300px;
+    justify-content: right;
+    top: 800px;
+    max-width: auto;
+    max-height: auto;
 }
 
 .subtitle {
-    display: flex;
-    display: inline-flex;
     position: absolute;
-    top: 250px;
-    left: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0px;
+    margin-right: 50px;
+    margin-top: 450px;
 }
