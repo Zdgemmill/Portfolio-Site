@@ -66,20 +66,32 @@ nav a {
 .card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .card img {
-    flex: 0;
-    flex-direction: column-reverse;
-    max-width: 50%;
     border: solid #84D1F1;
+    max-width: 20%;
 
 }
 
-#first-image {
-    max-width: 100%;
+.card ul li {
+    margin-right: 30px;
+    text-decoration: underline #84D1F1 3px;
+    color: #939AA1;
 }
+
+.card a {
+    color: #939AA1;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+.image-1 {
+    align-self: center;
+    max-width: 40%;
+
+}
+
 
 .float-left-child {
     display: flex;
@@ -88,17 +100,19 @@ nav a {
     border-right: solid black;
     margin-right: 30px;
     padding-bottom: 100PX;
+    flex-direction: row;
+    padding-right: 50px;
 
 
 }
 
 .float-right-child {
-    flex: 1;
-    flex-direction: column;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     background-color: white;
-    padding-bottom: 100PX;
+    flex: 0 0 1;
+
 }
 
 
@@ -132,3 +146,4 @@ nav a {
         background-color: white;
         padding-bottom: 0px;
     }
+}
